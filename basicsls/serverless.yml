@@ -1,0 +1,16 @@
+service: basicsls
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  echo:
+    cljs: basicsls.core/echo
+    events:
+      - http:
+          path: echo
+          method: post
+
+plugins:
+  - serverless-cljs-plugin
