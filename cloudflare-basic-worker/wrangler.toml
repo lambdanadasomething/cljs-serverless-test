@@ -1,0 +1,4 @@
+name = "cloudflare-basic-worker"
+type = "javascript"
+account_id = "5392d23f6ea2de5791ebf23b43066f14"
+workers_dev = true
